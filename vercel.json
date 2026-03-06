@@ -9,15 +9,15 @@
     ],
     "routes": [
         {
-            "src": "/style.css",
-            "dest": "/style.css",
+            "src": "style.css",
+            "dest": "style.css",
             "headers": {
                 "content-type": "text/css"
             }
         },
         {
-            "src": "/script.js",
-            "dest": "/script.js",
+            "src": "script.js",
+            "dest": "script.js",
             "headers": {
                 "content-type": "application/javascript"
             }
