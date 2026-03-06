@@ -5,9 +5,7 @@
     "main": "index.html",
     "scripts": {
         "start": "npx serve .",
-        "dev": "npx serve .",
-        "build": "echo 'Static site - no build needed'",
-        "vercel-build": "echo 'Static site - no build needed'"
+        "dev": "npx serve ."
     },
     "dependencies": {},
     "devDependencies": {}
