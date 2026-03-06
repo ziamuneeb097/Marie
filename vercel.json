@@ -1,7 +1,30 @@
 {
     "version": 2,
     "name": "marie-chat",
-    "public": true,
-    "cleanUrls": true,
-    "trailingSlash": false
+    "builds": [
+        {
+            "src": "index.html",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "style.css",
+            "dest": "style.css",
+            "headers": {
+                "content-type": "text/css"
+            }
+        },
+        {
+            "src": "script.js",
+            "dest": "script.js",
+            "headers": {
+                "content-type": "application/javascript"
+            }
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/$1"
+        }
+    ]
 }
