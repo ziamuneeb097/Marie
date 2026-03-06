@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n8n Premium Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-blob"></div>
+    
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="status-indicator"></div>
+            <h1>AI Assistant</h1>
+        </header>
+
+        <main class="chat-messages" id="chat-messages">
+            <!-- Messages will appear here -->
+            <div class="message ai-message">
+                Salut ! 👋 Je suis ton coach virtuel de l'Académie ZÉROLIMITE, inspiré par la façon dont Martin Latulippe accompagne les entrepreneurs. Mon rôle ici est clair : t'aider à voir où tu en es dans ton parcours, à clarifier ce qui compte vraiment pour toi maintenant, et à te guider vers la prochaine étape la plus adaptée à ta réalité. Comme un vrai mentor, je vais te poser des questions simples, une à la fois. Ces questions sont là pour m'adapter à ton rythme, ton énergie, et à ce que tu vis. Le but est de t'offrir plus de clarté, une direction claire, et surtout, une action concrète qui a du sens aujourd'hui. Es-tu prêt(e) à commencer ? Écris "GO" pour démarrer !
+            </div>
+        </main>
+
+        <div id="typing-container" class="typing-container" style="display: none;">
+            <div id="typing" class="typing">Assistant is thinking...</div>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </div>
+
+        <form class="chat-input-area" id="chat-form">
+            <input type="text" id="user-input" class="chat-input" placeholder="Type your message..." autocomplete="off">
+            <button type="submit" class="send-btn">
+                <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
